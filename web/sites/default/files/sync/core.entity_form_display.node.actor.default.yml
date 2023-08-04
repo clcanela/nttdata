@@ -1,0 +1,60 @@
+uuid: 375cb8e7-734e-4ca8-8415-d61a2b37abfc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.actor.field_biography
+    - field.field.node.actor.field_picture
+    - image.style.thumbnail
+    - node.type.actor
+  module:
+    - image
+    - path
+    - text
+id: node.actor.default
+targetEntityType: node
+bundle: actor
+mode: default
+content:
+  field_biography:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_picture:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  sticky: true
+  uid: true

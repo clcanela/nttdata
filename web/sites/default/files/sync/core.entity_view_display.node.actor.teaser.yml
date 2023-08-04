@@ -1,0 +1,24 @@
+uuid: fed498d8-3f15-45c0-acf2-97083fe8bdd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.actor.field_biography
+    - field.field.node.actor.field_picture
+    - node.type.actor
+  module:
+    - user
+id: node.actor.teaser
+targetEntityType: node
+bundle: actor
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_biography: true
+  field_picture: true

@@ -1,0 +1,24 @@
+uuid: 06d12b05-0aa8-40e9-89f5-594c3511ccde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_biography
+    - filter.format.basic_html
+    - node.type.actor
+  module:
+    - text
+id: node.actor.field_biography
+field_name: field_biography
+entity_type: node
+bundle: actor
+label: Biography
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long
