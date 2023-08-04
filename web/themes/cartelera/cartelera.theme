@@ -1,0 +1,13 @@
+<?php
+/**
+ * Implements hook_theme_suggestions_HOOK_alter() for form templates.
+ */
+function cartelera_theme_suggestions_form_alter(array &$suggestions, array $variables) {
+  // Get the form element.
+  $element = $variables['element'];
+  // Check if the form ID matches the desired form.
+  if ($element['#id'] === 'views-exposed-form-frontpage-page-1') {
+    // Add a template suggestion for the form.
+    $suggestions[] = 'form__cartelera_filtros';
+  }
+}
