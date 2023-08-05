@@ -1,1 +1,15 @@
-NTT Data - Drupal Hands-on Test&#10&#10Drupal version: 10.1&#10PHP version: 8.1&#10&#10No extra modules were installed&#10&#10The list of movies on the Actor page is a rendered view on the preprocess_page hook,&#10no special module was needed&#10&#10Created styles and template overrides for some CT&#10&#10No special instruction for installing the project other than the standard Drupal&#10technical requirements&#10
+# NTT Data - Drupal Hands-on Test
+
+### Drupal version: 10.1
+### PHP version: 8.1
+
+No extra modules were installed
+
+The list of movies on the Actor page is a rendered view on the preprocess_page hook,
+no special module was needed
+
+Created styles and template overrides for some CT. SCSS was used for CSS compiling but
+shouldn't be needed
+
+No special instruction for installing the project other than the standard Drupal
+technical requirements
