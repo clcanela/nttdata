@@ -1,16 +1,4 @@
 <?php
-/**
- * Implements hook_theme_suggestions_HOOK_alter() for form templates.
- */
-function cartelera_theme_suggestions_form_alter(array &$suggestions, array $variables) {
-  // Get the form element.
-  $element = $variables['element'];
-  // Check if the form ID matches the desired form.
-  if ($element['#id'] === 'views-exposed-form-frontpage-page-1') {
-    // Add a template suggestion for the form.
-    $suggestions[] = 'form__cartelera_filtros';
-  }
-}
 
 /**
  * Implements hook_preprocess_HOOK() for page templates.
@@ -20,5 +8,34 @@ function cartelera_preprocess_page(&$variables) {
   if (\Drupal::service('path.matcher')->isFrontPage()) {
     // Attach the library to the front page.
     $variables['#attached']['library'][] = 'cartelera/frontpage';
+  }
+  // Check if this is node page of content type "movie."
+  if ((\Drupal::routeMatch()->getParameter('node') && \Drupal::routeMatch()
+      ->getParameter('node')
+      ->getType() === 'movie')) {
+    // Attach the library to the front page and movie node pages.
+    $variables['#attached']['library'][] = 'cartelera/movie';
+  }
+  // Check if this is node page of content type "actor."
+  if ((\Drupal::routeMatch()->getParameter('node') && \Drupal::routeMatch()
+      ->getParameter('node')
+      ->getType() === 'actor')) {
+    // Attach the library to the front page and movie node pages.
+    $variables['#attached']['library'][] = 'cartelera/actor';
+  }
+}
+
+/**
+ * Implements template_preprocess_node().
+ *
+ * @param $variables
+ */
+function cartelera_preprocess_node(&$variables) {
+  if ((\Drupal::routeMatch()->getParameter('node') && \Drupal::routeMatch()
+      ->getParameter('node')
+      ->getType() === 'actor')) {
+    $moviesOfActor = views_embed_view('movies_of_actor', 'default', $variables['node']->id());
+    $variables['movies_of_view'] = \Drupal::service('renderer')
+      ->renderRoot($moviesOfActor);
   }
 }

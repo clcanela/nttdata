@@ -1,0 +1,21 @@
+.page-node-type-actor .main-content .main-content__container main .region--content-above #block-cartelera-page-title h1.page-title {
+  color: #fff;
+}
+.page-node-type-actor .main-content .main-content__container main #block-cartelera-content article.node--type-actor .field--name-field-picture {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.page-node-type-actor .main-content .main-content__container main #block-cartelera-content article.node--type-actor .field--name-field-picture img {
+  width: 80%;
+  max-width: 425px;
+  height: auto;
+}
+.page-node-type-actor .main-content .main-content__container main #block-cartelera-content article.node--type-actor .field--name-field-biography {
+  color: #FFF;
+}
+.page-node-type-actor .main-content .main-content__container main #block-cartelera-content article.node--type-actor .white-title {
+  color: #fff;
+}
+
+/*# sourceMappingURL=actor.css.map */

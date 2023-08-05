@@ -1,0 +1,47 @@
+.page-node-type-movie {
+  #main {
+    .main-content__container {
+      main {
+        .region--content-above{
+          #block-cartelera-page-title{
+            h1.page-title{
+              background-color: rgba(255, 255, 255, 0.4);
+              backdrop-filter: blur(10px);
+              padding: 10px 30px;
+            }
+          }
+        }
+        #block-cartelera-content {
+          article.node--type-movie {
+            .node__content{
+              display: grid;
+              grid-template-columns: 40% 60%;
+              .field--name-field-poster{
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                width: 100%;
+                margin: 0;
+                margin-inline-start: unset;
+                img{
+                  width: 100%;
+                  object-fit: contain;
+                }
+              }
+              .field--name-field-actors{
+                padding: 0 10px;
+              }
+              .field--name-field-synopsis{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                color: #fff;
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
