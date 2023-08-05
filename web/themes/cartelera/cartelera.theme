@@ -11,3 +11,14 @@ function cartelera_theme_suggestions_form_alter(array &$suggestions, array $vari
     $suggestions[] = 'form__cartelera_filtros';
   }
 }
+
+/**
+ * Implements hook_preprocess_HOOK() for page templates.
+ */
+function cartelera_preprocess_page(&$variables) {
+  // Check if this is the front page.
+  if (\Drupal::service('path.matcher')->isFrontPage()) {
+    // Attach the library to the front page.
+    $variables['#attached']['library'][] = 'cartelera/frontpage';
+  }
+}

@@ -1,0 +1,22 @@
+uuid: ff23d2f6-6643-4982-8e15-25c68b0d626e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cartelera
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: cartelera_breadcrumbs
+theme: cartelera
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

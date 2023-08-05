@@ -1,0 +1,22 @@
+uuid: 4464b862-88ad-4e8a-b432-2e9863acec50
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - cartelera
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: cartelera_help
+theme: cartelera
+region: content_above
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

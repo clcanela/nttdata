@@ -3,6 +3,8 @@ type: theme
 base theme: olivero
 description: 'Olivero based subtheme for NTT HoT'
 core_version_requirement: ^9 || ^10
+libraries:
+  - cartelera/global-styling
 regions:
   header: Header
   primary_menu: 'Primary menu'

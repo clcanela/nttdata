@@ -1,0 +1,22 @@
+uuid: 884d7a32-b4d1-4b8f-96a8-2c7645b3b553
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cartelera
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: cartelera_secondary_local_tasks
+theme: cartelera
+region: highlighted
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

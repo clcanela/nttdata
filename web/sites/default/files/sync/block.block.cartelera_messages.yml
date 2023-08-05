@@ -1,0 +1,22 @@
+uuid: 664fe569-9df2-4a16-a77b-7c98483c3f93
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cartelera
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: cartelera_messages
+theme: cartelera
+region: highlighted
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

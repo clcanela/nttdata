@@ -22,7 +22,7 @@ content:
     type: image
     label: hidden
     settings:
-      image_link: content
+      image_link: ''
       image_style: large
       image_loading:
         attribute: lazy
@@ -33,7 +33,7 @@ content:
     type: text_summary_or_trimmed
     label: hidden
     settings:
-      trim_length: 600
+      trim_length: 250
     third_party_settings: {  }
     weight: 2
     region: content

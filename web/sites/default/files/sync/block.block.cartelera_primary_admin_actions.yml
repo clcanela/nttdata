@@ -1,0 +1,20 @@
+uuid: 6a76cc61-d8ae-4fbb-9bfc-a6b85117505c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cartelera
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: cartelera_primary_admin_actions
+theme: cartelera
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }
